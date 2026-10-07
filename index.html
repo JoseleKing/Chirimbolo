@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chirimbolo</title>
+  <meta name="description" content="¿Cómo se llama esta cosa? Tres láminas al día para descubrir las palabras precisas del español.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icons/chirimbolo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#f3ebdc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16202c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Chirimbolo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Portada en línea: se pinta antes de que cargue styles.css. Repite los colores de :root. -->
+  <style>
+    #portada {
+      position: fixed; inset: 0; z-index: 10;
+      display: grid; place-content: center; justify-items: center; gap: 0.9rem;
+      background: #f3ebdc; color: #16202c;
+      transition: opacity 0.4s, visibility 0.4s;
+    }
+    #portada img { width: 7.5rem; height: 7.5rem; border-radius: 22%; box-shadow: 0 0 0 1px #c8b89c; animation: asomar 0.5s ease-out; }
+    #portada p { margin: 0; font: 2.4rem/1 "IM Fell English", Georgia, serif; animation: asomar 0.5s ease-out; }
+    #portada.oculta { opacity: 0; visibility: hidden; }
+    @media (prefers-color-scheme: dark) { #portada { background: #16202c; color: #efe6d6; } #portada img { box-shadow: 0 0 0 1px #3a4858; } }
+    @keyframes asomar { from { opacity: 0; transform: scale(0.9); } }
+  </style>
+</head>
+<body>
+  <div id="portada" aria-hidden="true"><img src="icons/chirimbolo.svg" width="120" height="120" alt=""><p>Chirimbolo</p></div>
+
+  <div class="hoja">
+    <header class="cabecera">
+      <button class="boton-icono" id="ayuda" type="button" aria-label="Cómo se juega">?</button>
+      <h1><img src="icons/chirimbolo.svg" width="34" height="34" alt="">Chirimbolo</h1>
+      <div class="marcador">
+        <span id="numero" class="numero"></span>
+        <span id="racha" class="racha" title="Días seguidos completados"></span>
+      </div>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+  </div>
+
+  <dialog id="reglas" aria-labelledby="reglas-titulo">
+    <button class="cerrar" type="button" aria-label="Cerrar">×</button>
+    <h2 id="reglas-titulo">Cómo se juega</h2>
+    <p class="entradilla">La punta del cordón, la rayita de la eñe, el hueco detrás de la rodilla… Todo tiene nombre, aunque casi nadie lo sepa.</p>
+    <ul>
+      <li>Cada día hay <strong>tres láminas</strong>, las mismas para todos, de <strong>fácil</strong> a <strong>difícil</strong>. Cambian a medianoche, hora de Madrid.</li>
+      <li>El <strong>punto rojo</strong> señala una parte del dibujo. Elige <strong>cómo se llama</strong> entre cuatro palabras.</li>
+      <li>Tienes <strong>un solo intento</strong> por lámina. Al responder verás la definición y una curiosidad.</li>
+      <li>La <strong>racha</strong> cuenta los días seguidos en que juegas las tres, aciertes o no.</li>
+      <li>Al terminar, <strong>comparte tu resultado</strong>: solo muestra aciertos y fallos, sin desvelar las palabras.</li>
+    </ul>
+    <button class="boton" type="button">Entendido</button>
+  </dialog>
+
+  <div id="aviso" role="status" aria-live="polite"></div>
+
+  <script src="volver-almanaque.js" defer></script>
+  <script src="data/dias.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
