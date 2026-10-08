@@ -15,7 +15,7 @@ GitHub Pages e instalable como aplicación (PWA).
 - El reto cambia a medianoche, hora de Madrid. El día nº 1 es el 7 de octubre de 2026
   (`INICIO` en `app.js`).
 - La racha cuenta los días seguidos en que se juegan las tres láminas, se acierte o no.
-- Resultado para compartir: `Chirimbolo nº 4 · 🟥🟥⬜` (🟥 acierto, ⬜ fallo).
+- Resultado para compartir: `Chirimbolo nº 4 ▰▰▱ 2/3 aciertos` y el enlace (▰ acierto, ▱ fallo).
 
 ## Archivos
 
