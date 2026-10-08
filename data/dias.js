@@ -249,6 +249,330 @@ const HACHA = `
   <path class="fondo" d="M132 32 L166 34 L166 54 L132 56 Z"/>
   <path class="f" d="M162 34 L168 34 L168 54 L162 54 Z"/>`;
 
+const ABANICO = `
+  <path class="fondo" d="M7.4 100 A130 130 0 0 1 232.6 100 L172 135 A60 60 0 0 0 68 135 Z"/>
+  <path class="fino" d="M30 87 L80 128 M51 66 L92 122 M77 49 L105 118 M104 39 L113 117 M136 39 L127 117 M163 49 L135 118 M189 66 L148 122 M210 87 L160 128"/>
+  <path class="fino" d="M18 93 C70 70 170 70 222 93 M34 112 C80 92 160 92 206 112"/>
+  <path class="mango" d="M120 165 L68 135 M120 165 L82 125 M120 165 L97 116 M120 165 L112 112 M120 165 L128 112 M120 165 L143 116 M120 165 L158 125 M120 165 L172 135"/>
+  <circle class="t" cx="120" cy="165" r="4.5"/>`;
+
+const CANDADO = `
+  <path class="mango" d="M92 84 L92 50 C92 18 148 18 148 50 L148 84"/>
+  <rect class="f" x="70" y="80" width="100" height="84" rx="10"/>
+  <path class="fino" d="M78 92 L162 92 M78 152 L162 152"/>
+  <circle class="t" cx="120" cy="114" r="7"/>
+  <path class="t" d="M116 116 L124 116 L127 136 L113 136 Z"/>`;
+
+const CABEZA = `
+  <path class="fondo" d="M104 176 L100 140 C92 140 84 136 80 130 C76 126 78 120 74 118 C70 116 72 110 74 106 C70 104 72 100 74 98 C66 96 58 94 58 90 C58 86 66 80 70 72 C70 60 72 50 80 42 C96 24 132 20 154 30 C176 42 184 70 178 96 C174 112 166 124 162 136 L166 176 Z"/>
+  <path class="fino" d="M80 42 C100 28 132 26 150 34 C166 42 176 60 176 80"/>
+  <path d="M136 84 C132 72 148 70 150 82 C152 96 146 106 138 104"/>
+  <path class="fino" d="M140 84 C142 80 146 84 144 90"/>
+  <path d="M80 70 C84 68 88 68 92 71"/>
+  <path class="fino" d="M76 62 C82 58 90 58 96 61"/>
+  <path class="fino" d="M76 116 L86 116"/>`;
+
+const BOCA = `
+  <path class="fondo" d="M30 92 C54 30 186 30 210 92 C186 158 54 158 30 92 Z"/>
+  <path class="t" d="M52 92 C70 52 170 52 188 92 C170 136 70 136 52 92 Z"/>
+  <path class="f" d="M64 80 C80 54 160 54 176 80 C160 74 80 74 64 80 Z"/>
+  <path class="fondo" d="M68 78 C70 72 76 70 80 72 L82 80 C78 82 72 82 68 78 Z M84 72 C88 66 96 66 100 68 L100 78 C94 80 88 80 84 78 Z M102 67 C108 64 116 64 119 65 L119 77 C114 78 106 78 102 77 Z M121 65 C124 64 132 64 138 67 L138 77 C134 78 126 78 121 77 Z M140 68 C144 66 152 66 156 72 L156 78 C152 80 146 80 140 78 Z M160 72 C164 70 170 72 172 78 C168 82 162 82 158 80 Z"/>
+  <path class="f" d="M90 84 C100 80 140 80 150 84 C142 90 98 90 90 84 Z"/>
+  <path class="fondo" d="M114 87 C113 98 115 106 120 109 C125 106 127 98 126 87 Z"/>
+  <path class="f" d="M62 118 C80 104 160 104 178 118 C160 132 80 132 62 118 Z"/>
+  <path class="fino" d="M120 110 L120 126"/>`;
+
+const PIE = `
+  <path class="fondo" d="M52 4 L54 70 C54 82 46 96 40 112 C34 126 36 146 50 152 L196 152 C214 152 222 144 218 136 C214 128 200 124 186 122 C170 120 150 116 130 104 C110 92 98 82 96 66 L94 4 Z"/>
+  <path class="f" d="M174 120 C182 116 192 120 192 128 C192 134 186 138 178 136 C172 134 170 124 174 120 Z"/>
+  <path class="fino" d="M70 86 C64 82 66 72 74 72 C82 72 84 82 78 86 Z"/>
+  <path class="fino" d="M196 152 C200 144 208 140 216 140"/>
+  <path class="fino" d="M60 152 C90 148 130 148 170 152"/>
+  <path class="fino" d="M206 128 L214 134"/>`;
+
+const GATO = `
+  <path class="fondo" d="M50 96 C50 66 70 48 100 48 C130 48 150 66 150 96 C150 128 128 148 100 148 C72 148 50 128 50 96 Z"/>
+  <path class="fondo" d="M56 76 L54 30 L84 52 Z M144 76 L146 30 L116 52 Z"/>
+  <path class="fino" d="M60 64 L58 40 L76 54 M140 64 L142 40 L124 54"/>
+  <path class="t" d="M76 88 C80 80 90 80 92 88 C90 94 80 94 76 88 Z M108 88 C110 80 120 80 124 88 C120 94 110 94 108 88 Z"/>
+  <path class="fondo" d="M84 116 C84 104 98 102 100 112 C102 102 116 104 116 116 C116 126 104 128 100 122 C96 128 84 126 84 116 Z"/>
+  <path class="t" d="M94 104 L106 104 L100 111 Z"/>
+  <path class="fino" d="M88 114 L40 104 M88 118 L36 120 M88 122 L42 136 M112 114 L160 104 M112 118 L164 120 M112 122 L158 136"/>
+  <path class="fondo" d="M186 176 L182 146 C176 132 178 112 196 108 C216 104 228 120 222 138 C218 148 212 152 208 176 Z"/>
+  <ellipse class="t" cx="201" cy="132" rx="9" ry="7"/>
+  <ellipse class="t" cx="188" cy="118" rx="4" ry="5"/><ellipse class="t" cx="198" cy="113" rx="4" ry="5"/>
+  <ellipse class="t" cx="209" cy="114" rx="4" ry="5"/><ellipse class="t" cx="217" cy="122" rx="4" ry="5"/>`;
+
+const TORO = `
+  <path class="f" d="M112 60 C122 46 140 42 156 52 C180 56 212 58 236 62 L236 150 L210 150 L208 176 L196 176 L192 140 L150 138 L148 176 L136 176 L132 146 C122 150 112 152 108 148 C104 130 100 116 94 110 C82 112 66 112 58 108 C50 104 48 96 54 90 C60 80 70 64 76 54 C86 50 100 52 112 60 Z"/>
+  <path class="fondo" d="M80 52 C70 40 62 30 58 16 C66 26 78 36 90 44 Z"/>
+  <path class="fondo" d="M96 50 C100 38 104 28 104 18 C110 28 108 42 104 52 Z"/>
+  <path class="t" d="M80 68 C84 64 90 66 90 70 C86 72 82 72 80 68 Z"/>
+  <path class="fino" d="M58 98 C62 96 64 100 62 102"/>
+  <path class="fino" d="M76 54 C84 56 92 54 100 56"/>
+  <path class="fino" d="M118 58 C126 52 140 50 150 54"/>`;
+
+const ROSA = `
+  <path class="mango" d="M120 92 C118 120 122 150 120 178"/>
+  <path class="t" d="M119 118 L132 112 L121 126 Z M121 146 L108 140 L119 154 Z M120 166 L131 162 L121 172 Z"/>
+  <path class="fondo" d="M120 140 C140 126 166 128 176 134 C164 146 140 148 120 140 Z"/>
+  <path class="fino" d="M124 139 C140 136 156 134 172 134"/>
+  <path class="f" d="M120 92 C106 94 90 100 80 112 C92 108 104 104 114 98 Z M120 92 C134 94 150 100 160 112 C148 108 136 104 126 98 Z M120 92 C114 102 112 112 116 120 C120 110 122 100 120 92 Z"/>
+  <path class="fondo" d="M86 70 C80 40 100 22 120 30 C140 22 160 40 154 70 C148 88 92 88 86 70 Z"/>
+  <path class="fino" d="M100 70 C96 52 106 40 120 42 C134 40 144 52 140 70 M110 66 C108 56 114 50 120 52 C128 52 132 58 128 66"/>
+  <path class="fino" d="M86 70 C96 80 144 80 154 70"/>`;
+
+const SETA = `
+  <path class="fino" d="M10 172 L230 172"/>
+  <path class="f" d="M100 172 C96 158 104 148 120 148 C136 148 144 158 140 172 Z"/>
+  <path class="fondo" d="M108 82 L106 156 C110 160 130 160 134 156 L132 82 Z"/>
+  <path class="fondo" d="M106 96 C96 104 92 112 96 116 C110 110 130 110 144 116 C148 112 144 104 134 96 Z"/>
+  <path class="fondo" d="M40 82 C40 40 80 22 120 22 C160 22 200 40 200 82 Z"/>
+  <path class="fino" d="M48 82 L120 88 L192 82 M64 82 L120 88 M80 82 L120 88 M96 82 L120 88 M144 82 L120 88 M160 82 L120 88 M176 82 L120 88"/>
+  <circle class="fino" cx="90" cy="48" r="5"/><circle class="fino" cx="140" cy="40" r="4"/><circle class="fino" cx="164" cy="60" r="5"/><circle class="fino" cx="112" cy="64" r="3.5"/>`;
+
+const BARCA = `
+  <path class="mango" d="M120 46 L160 6 M120 134 L160 174"/>
+  <path class="f" d="M156 2 C162 -2 172 6 166 12 L158 14 Z M156 178 C162 182 172 174 166 168 L158 166 Z"/>
+  <path class="fondo" d="M14 90 C50 40 170 40 226 90 C170 140 50 140 14 90 Z"/>
+  <path class="fino" d="M28 90 C62 52 166 52 210 90 C166 128 62 128 28 90 Z"/>
+  <path class="f" d="M84 54 L96 54 L96 126 L84 126 Z M144 52 L156 52 L156 128 L144 128 Z"/>
+  <path class="fino" d="M188 70 L188 110"/>
+  <circle class="t" cx="120" cy="47" r="4"/><circle class="t" cx="120" cy="133" r="4"/>`;
+
+const CASTILLO = `
+  <path class="fino" d="M8 176 L232 176"/>
+  <path class="fondo" d="M70 40 L170 40 L170 176 L70 176 Z"/>
+  <path class="fondo" d="M70 22 L88 22 L88 40 L70 40 Z M96 22 L112 22 L112 40 L96 40 Z M128 22 L144 22 L144 40 L128 40 Z M152 22 L170 22 L170 40 L152 40 Z"/>
+  <path class="f" d="M96 62 L144 62 L144 80 L96 80 Z"/>
+  <path class="fino" d="M96 80 L102 88 L108 80 M114 80 L120 88 L126 80 M132 80 L138 88 L144 80"/>
+  <path class="t" d="M118 104 L122 104 L122 132 L118 132 Z"/>
+  <path class="t" d="M102 176 L102 154 C102 140 138 140 138 154 L138 176 Z"/>
+  <path class="fino" d="M70 64 L96 64 M144 64 L170 64 M70 100 L170 100 M70 136 L170 136"/>`;
+
+const FACHADA = `
+  <path class="fino" d="M4 176 L236 176"/>
+  <path class="fondo" d="M60 176 L60 60 L120 20 L180 60 L180 176 Z"/>
+  <path class="f" d="M40 176 L40 50 L60 50 L60 176 Z M180 176 L180 50 L200 50 L200 176 Z"/>
+  <path d="M40 50 L50 14 L60 50 M180 50 L190 14 L200 50"/>
+  <path class="fino" d="M46 30 L54 30 M186 30 L194 30"/>
+  <circle class="fondo" cx="120" cy="82" r="24"/>
+  <circle class="fino" cx="120" cy="82" r="7"/>
+  <path class="fino" d="M120 58 L120 75 M120 89 L120 106 M96 82 L113 82 M127 82 L144 82 M103 65 L115 77 M125 87 L137 99 M137 65 L125 77 M115 87 L103 99"/>
+  <path class="t" d="M100 176 L100 140 C100 126 140 126 140 140 L140 176 Z"/>
+  <path class="fondo" d="M200 96 L222 92 C228 90 232 94 230 98 L226 100 L222 104 L216 100 L200 104 Z"/>
+  <path class="t" d="M222 94 L224 94 L224 96 L222 96 Z"/>`;
+
+const CASA = `
+  <path class="fino" d="M4 172 L236 172"/>
+  <path class="fondo" d="M40 82 L200 82 L200 172 L40 172 Z"/>
+  <path class="f" d="M24 84 L120 20 L216 84 Z"/>
+  <path class="fondo" d="M98 66 L98 46 L114 34 L130 46 L130 66 Z"/>
+  <path class="fino" d="M104 64 L104 50 L124 50 L124 64 Z"/>
+  <path d="M20 84 L220 84 M20 90 L220 90"/>
+  <path d="M206 90 L206 168 L214 168 M212 90 L212 162"/>
+  <path class="fino" d="M70 110 L96 110 L96 140 L70 140 Z M144 110 L170 110 L170 140 L144 140 Z"/>
+  <path class="t" d="M110 172 L110 132 L130 132 L130 172 Z"/>`;
+
+const PUERTA = `
+  <path class="fondo" d="M60 8 L180 8 L180 176 L60 176 Z"/>
+  <path class="fino" d="M72 20 L168 20 L168 82 L72 82 Z M72 96 L168 96 L168 164 L72 164 Z"/>
+  <path class="f" d="M56 30 L68 30 L68 46 L56 46 Z M56 136 L68 136 L68 152 L56 152 Z"/>
+  <circle class="t" cx="120" cy="54" r="5"/>
+  <circle cx="120" cy="72" r="13"/>
+  <path class="t" d="M160 94 L168 94 L168 114 L160 114 Z"/>
+  <path class="mango" d="M164 100 L134 103"/>`;
+
+const TAMBOR = `
+  <path class="mango" d="M60 8 L132 56 M180 8 L108 56"/>
+  <circle class="t" cx="58" cy="7" r="5"/><circle class="t" cx="182" cy="7" r="5"/>
+  <path class="f" d="M50 76 L50 146 C50 168 190 168 190 146 L190 76 Z"/>
+  <ellipse class="fondo" cx="120" cy="76" rx="70" ry="18"/>
+  <ellipse class="fino" cx="120" cy="76" rx="62" ry="14"/>
+  <path class="fino" d="M60 92 L80 150 L100 98 L120 156 L140 98 L160 150 L180 92"/>
+  <path d="M50 140 C50 160 190 160 190 140"/>`;
+
+const TROMPETA = `
+  <path class="f" d="M8 84 C8 78 20 76 24 84 L24 96 C20 104 8 102 8 96 Z"/>
+  <path d="M24 86 L180 86 M24 94 L180 94"/>
+  <path class="fondo" d="M176 84 C196 80 214 62 230 50 L230 130 C214 118 196 100 176 96 Z"/>
+  <ellipse class="fino" cx="230" cy="90" rx="6" ry="40"/>
+  <path d="M60 94 C60 124 80 124 96 124 L160 124 C176 124 176 94 176 94"/>
+  <path class="fondo" d="M96 66 L106 66 L106 128 L96 128 Z M112 66 L122 66 L122 128 L112 128 Z M128 66 L138 66 L138 128 L128 128 Z"/>
+  <path class="f" d="M94 56 L108 56 L108 64 L94 64 Z M110 56 L124 56 L124 64 L110 64 Z M126 56 L140 56 L140 64 L126 64 Z"/>`;
+
+const BALANZA = `
+  <path class="f" d="M80 172 L160 172 L150 158 L90 158 Z"/>
+  <path class="mango" d="M120 158 L120 44"/>
+  <path d="M40 44 L200 44"/>
+  <path class="t" d="M118 44 L120 14 L122 44 Z"/>
+  <path class="fino" d="M104 20 C112 12 128 12 136 20"/>
+  <circle class="t" cx="120" cy="44" r="4"/>
+  <path class="fino" d="M40 44 L22 106 M40 44 L58 106 M200 44 L182 106 M200 44 L218 106"/>
+  <path class="fondo" d="M14 106 L66 106 C62 120 18 120 14 106 Z M174 106 L226 106 C222 120 178 120 174 106 Z"/>`;
+
+const CINTURON = `
+  <path class="fondo" d="M0 78 L96 78 L96 112 L0 112 Z M124 78 L240 78 L240 112 L124 112 Z"/>
+  <path class="fino oculto" d="M0 82 L96 82 M0 108 L96 108 M124 82 L240 82 M124 108 L240 108"/>
+  <circle class="t" cx="184" cy="95" r="3.5"/><circle class="t" cx="204" cy="95" r="3.5"/><circle class="t" cx="224" cy="95" r="3.5"/>
+  <path class="fondo" d="M150 72 L162 72 L162 118 L150 118 Z"/>
+  <path d="M86 66 L124 66 L124 124 L86 124 Z M92 72 L118 72 L118 118 L92 118 Z"/>
+  <path class="mango" d="M104 95 L144 95"/>`;
+
+const ARADO = `
+  <path class="fino" d="M0 166 L240 166"/>
+  <path class="mango" d="M76 146 L28 36 M120 120 L236 52"/>
+  <path class="fino" d="M28 36 L14 40"/>
+  <path class="f" d="M70 146 L156 146 L156 158 L70 158 Z"/>
+  <path class="t" d="M156 146 L196 156 L156 160 Z"/>
+  <path d="M100 146 L120 120 M130 146 L120 120"/>`;
+
+const POZO = `
+  <path class="fino" d="M4 172 L236 172"/>
+  <path class="mango" d="M64 112 L64 26 M176 112 L176 26"/>
+  <path d="M56 26 L184 26"/>
+  <circle class="fondo" cx="120" cy="44" r="12"/>
+  <circle class="t" cx="120" cy="44" r="3"/>
+  <path class="fino" d="M120 26 L120 32 M132 44 L132 92 M108 44 L108 70"/>
+  <path class="f" d="M100 70 L116 70 L114 88 L102 88 Z"/>
+  <path class="fondo" d="M50 112 L190 112 L190 168 L50 168 Z"/>
+  <ellipse class="f" cx="120" cy="112" rx="70" ry="10"/>
+  <path class="fino" d="M50 130 L190 130 M50 150 L190 150 M80 112 L80 130 M120 122 L120 130 M160 112 L160 130 M64 130 L64 150 M104 130 L104 150 M144 130 L144 150 M180 130 L180 150 M84 150 L84 168 M124 150 L124 168 M164 150 L164 168"/>`;
+
+const MARIPOSA = `
+  <path class="fino" d="M150 150 C170 152 200 158 236 156"/>
+  <path class="fondo" d="M100 128 C110 70 140 20 196 14 C200 60 180 110 150 132 Z"/>
+  <path class="fino" d="M110 124 C130 90 160 50 190 26 M126 128 C150 104 172 70 186 40"/>
+  <circle class="t" cx="160" cy="70" r="7"/>
+  <path class="f" d="M86 134 C96 126 140 126 160 132 C150 140 100 142 86 134 Z"/>
+  <circle class="f" cx="80" cy="132" r="8"/>
+  <path d="M76 126 C66 104 56 84 40 70 M80 124 C76 100 70 80 60 62"/>
+  <circle class="t" cx="40" cy="70" r="3"/><circle class="t" cx="60" cy="62" r="3"/>
+  <path d="M74 138 C70 150 60 156 54 152 C48 148 52 140 58 142 C62 144 60 148 58 148"/>
+  <path class="fino" d="M100 140 L94 158 M116 140 L114 160 M132 138 L136 158"/>`;
+
+const MARIQUITA = `
+  <path class="fino" d="M80 70 L50 56 M76 104 L42 108 M82 132 L54 150 M160 70 L190 56 M164 104 L198 108 M158 132 L186 150"/>
+  <path class="fino" d="M108 40 C100 26 92 18 82 14 M132 40 C140 26 148 18 158 14"/>
+  <path class="t" d="M100 50 C100 32 140 32 140 50 Z"/>
+  <path class="fondo" d="M72 98 C72 66 92 50 120 50 C148 50 168 66 168 98 C168 136 148 158 120 158 C92 158 72 136 72 98 Z"/>
+  <path d="M120 50 L120 158"/>
+  <circle class="t" cx="96" cy="78" r="8"/><circle class="t" cx="144" cy="78" r="8"/>
+  <circle class="t" cx="92" cy="118" r="9"/><circle class="t" cx="148" cy="118" r="9"/>
+  <circle class="t" cx="110" cy="140" r="5"/><circle class="t" cx="130" cy="140" r="5"/>`;
+
+const SILLA_MONTAR = `
+  <path class="f" d="M86 92 L150 92 L156 132 L80 132 Z"/>
+  <path class="fondo" d="M58 70 C60 56 66 44 74 42 C80 42 84 52 86 64 C108 82 146 82 166 60 C172 48 182 40 190 46 C196 66 184 88 160 96 L82 96 C64 94 56 84 58 70 Z"/>
+  <circle class="fondo" cx="74" cy="42" r="7"/>
+  <path class="fino" d="M92 74 C112 86 140 86 158 72"/>
+  <path d="M120 96 L120 144"/>
+  <path class="mango" d="M104 160 L136 160"/>
+  <path d="M104 160 L110 144 L130 144 L136 160"/>`;
+
+const MONTANA = `
+  <path class="fondo" d="M0 160 L58 54 L100 96 L150 30 L240 160 Z"/>
+  <path class="f" d="M150 30 L240 160 L196 160 L172 96 Z"/>
+  <path class="fino" d="M50 70 L64 66 L58 54 Z M142 42 L150 30 L160 44 L150 40 Z"/>
+  <path class="fino" d="M100 96 C96 120 104 140 98 176"/>
+  <path class="fino oculto" d="M100 96 C110 120 116 140 122 176"/>
+  <path class="fino" d="M30 160 L100 128 M180 160 L130 124"/>`;
+
+const RIO = `
+  <path class="f" d="M0 0 L240 0 L240 152 C200 148 170 156 140 152 C110 156 80 148 40 154 C24 156 10 152 0 154 Z"/>
+  <path class="fondo" d="M108 0 C104 20 60 30 62 56 C64 84 120 82 118 108 C116 126 100 132 104 146 L136 146 C134 132 146 124 142 106 C140 74 84 76 86 56 C88 36 128 26 132 0 Z"/>
+  <path class="fondo" d="M240 56 C210 60 180 74 142 92 L140 102 C176 86 206 74 240 70 Z"/>
+  <path class="fondo" d="M0 156 C40 152 70 160 100 156 C112 154 116 150 120 146 C124 150 128 154 140 156 C170 160 200 152 240 156 L240 180 L0 180 Z"/>
+  <path class="fino" d="M120 146 L98 166 M120 146 L120 170 M120 146 L142 166 M110 156 L106 172 M130 156 L134 172"/>`;
+
+const COSTA = `
+  <path class="fondo" d="M0 0 L240 0 L240 180 L0 180 Z"/>
+  <path class="f" d="M0 180 L0 70 C20 66 34 76 40 92 C46 108 62 116 82 110 C96 104 98 90 110 84 C120 80 132 86 138 96 C142 104 152 108 160 106 C180 112 196 116 212 114 L236 110 L216 126 C222 136 230 142 240 144 L240 180 Z"/>
+  <path class="f" d="M134 98 C140 84 144 70 150 62 C150 54 156 46 166 40 C184 30 210 34 216 50 C222 66 206 76 188 76 C176 76 170 82 160 92 C156 100 148 104 142 100 Z"/>
+  <path class="fino" d="M46 96 C52 100 58 102 64 102"/>`;
+
+const ALMEJA = `
+  <path class="fondo" d="M120 40 C72 42 34 84 40 124 C46 150 88 160 120 160 C152 160 194 150 200 124 C206 84 168 42 120 40 Z"/>
+  <path class="fino" d="M120 56 C84 58 56 90 60 122 M120 72 C96 74 76 98 80 126 M120 56 C156 58 184 90 180 122 M120 72 C144 74 164 98 160 126"/>
+  <path class="fino" d="M48 130 C80 146 160 146 192 130"/>
+  <path class="f" d="M104 46 C110 34 130 34 136 46 C130 50 110 50 104 46 Z"/>
+  <path class="t" d="M112 44 L114 40 L116 44 Z M118 44 L120 39 L122 44 Z M124 44 L126 40 L128 44 Z"/>`;
+
+const TIENDA = `
+  <path class="fino" d="M0 164 L240 164"/>
+  <path class="fondo" d="M60 160 L120 44 L180 160 Z"/>
+  <path class="f" d="M120 44 L180 160 L210 156 L146 42 Z"/>
+  <path class="t" d="M120 92 L108 160 L132 160 Z"/>
+  <path class="fino" d="M120 44 L22 158 M146 42 L232 150"/>
+  <path class="mango" d="M16 150 L26 164 M226 142 L236 156"/>`;
+
+const CAMA = `
+  <path class="fino" d="M4 168 L236 168"/>
+  <path class="f" d="M18 30 C18 22 44 22 44 30 L44 168 L36 168 L36 150 L26 150 L26 168 L18 168 Z"/>
+  <path class="f" d="M200 92 L222 92 L222 168 L214 168 L214 150 L208 150 L208 168 L200 168 Z"/>
+  <path class="fondo" d="M44 96 L200 96 L200 122 L44 122 Z"/>
+  <path class="fondo" d="M50 82 C50 72 92 72 92 82 L92 96 L50 96 Z"/>
+  <path d="M44 122 L200 122 L200 136 L44 136 Z"/>`;
+
+const LAVABO = `
+  <path class="fino" d="M0 172 L240 172"/>
+  <path class="fino oculto" d="M120 82 L120 110 C120 128 150 128 150 110 L150 100 L182 100"/>
+  <path class="fondo" d="M100 82 L104 160 C104 168 136 168 136 160 L140 82 Z"/>
+  <path class="fondo" d="M36 50 L204 50 L196 72 C180 86 60 86 44 72 Z"/>
+  <path d="M30 46 L210 46 L210 54 L30 54 Z"/>
+  <path class="t" d="M114 62 L126 62 L126 66 L114 66 Z"/>
+  <path class="mango" d="M120 46 L120 30 L134 30"/>
+  <path class="fino" d="M36 172 L204 172"/>`;
+
+const MAQUINA_COSER = `
+  <path class="f" d="M14 146 L226 146 L226 164 L14 164 Z"/>
+  <path class="fondo" d="M40 46 L206 46 L206 146 L176 146 L176 74 L74 74 L74 110 L40 110 Z"/>
+  <path d="M54 110 L54 128"/>
+  <path class="t" d="M53 128 L55 128 L55 140 L53 140 Z"/>
+  <path class="fondo" d="M42 136 L66 136 L68 142 L40 142 Z"/>
+  <path class="fino" d="M62 110 L62 136"/>
+  <circle class="fondo" cx="210" cy="84" r="22"/>
+  <circle class="fino" cx="210" cy="84" r="5"/>
+  <path class="fino" d="M120 46 L120 36 M110 36 L130 36"/>`;
+
+const TELEFONO = `
+  <path class="f" d="M50 160 L190 160 L176 92 L64 92 Z"/>
+  <circle class="fondo" cx="120" cy="128" r="26"/>
+  <circle class="t" cx="120" cy="128" r="6"/>
+  <circle class="fino" cx="120" cy="108" r="4"/><circle class="fino" cx="137" cy="116" r="4"/><circle class="fino" cx="140" cy="134" r="4"/>
+  <circle class="fino" cx="128" cy="148" r="4"/><circle class="fino" cx="110" cy="148" r="4"/><circle class="fino" cx="100" cy="134" r="4"/><circle class="fino" cx="103" cy="116" r="4"/>
+  <path class="mango" d="M80 92 L80 74 M160 92 L160 74"/>
+  <path class="fondo" d="M40 60 C40 50 60 48 66 56 L174 56 C180 48 200 50 200 60 C200 74 180 78 172 70 L68 70 C60 78 40 74 40 60 Z"/>`;
+
+const MAQUINA_ESCRIBIR = `
+  <path class="fondo" d="M76 10 L164 10 L164 56 L76 56 Z"/>
+  <path class="fino" d="M86 22 L150 22 M86 30 L156 30 M86 38 L140 38"/>
+  <path class="f" d="M40 48 L200 48 L200 64 L40 64 Z"/>
+  <circle class="fondo" cx="34" cy="56" r="8"/><circle class="fondo" cx="206" cy="56" r="8"/>
+  <path class="fondo" d="M30 64 L210 64 L226 160 L14 160 Z"/>
+  <path class="fino" d="M60 64 L60 96 L180 96 L180 64"/>
+  <circle class="fino" cx="48" cy="112" r="6"/><circle class="fino" cx="66" cy="112" r="6"/><circle class="fino" cx="84" cy="112" r="6"/><circle class="fino" cx="102" cy="112" r="6"/><circle class="fino" cx="120" cy="112" r="6"/><circle class="fino" cx="138" cy="112" r="6"/><circle class="fino" cx="156" cy="112" r="6"/><circle class="fino" cx="174" cy="112" r="6"/><circle class="fino" cx="192" cy="112" r="6"/>
+  <circle class="fino" cx="44" cy="130" r="6"/><circle class="fino" cx="62" cy="130" r="6"/><circle class="fino" cx="80" cy="130" r="6"/><circle class="fino" cx="98" cy="130" r="6"/><circle class="fino" cx="116" cy="130" r="6"/><circle class="fino" cx="134" cy="130" r="6"/><circle class="fino" cx="152" cy="130" r="6"/><circle class="fino" cx="170" cy="130" r="6"/><circle class="fino" cx="188" cy="130" r="6"/>
+  <path class="fino" d="M70 148 L170 148"/>`;
+
+const RELOJ_CUCO = `
+  <path class="f" d="M70 40 L120 6 L170 40 Z"/>
+  <path class="fondo" d="M80 38 L160 38 L160 100 L80 100 Z"/>
+  <circle class="fondo" cx="120" cy="70" r="20"/>
+  <path class="fino" d="M120 70 L120 56 M120 70 L130 74"/>
+  <path class="t" d="M112 16 L128 16 L128 30 L112 30 Z"/>
+  <path class="fino" d="M120 100 L120 132 M96 100 L96 146 M146 100 L146 140"/>
+  <path class="f" d="M120 130 C130 130 134 140 128 148 L120 154 L112 148 C106 140 110 130 120 130 Z"/>
+  <path class="t" d="M90 146 L102 146 L104 172 C100 176 92 176 88 172 Z M140 140 L152 140 L154 166 C150 170 142 170 138 166 Z"/>`;
+
+const PLUMA = `
+  <path class="fondo" d="M80 80 L210 80 C220 80 226 86 226 90 C226 94 220 100 210 100 L80 100 Z"/>
+  <path class="f" d="M64 82 L84 80 L84 100 L64 98 Z"/>
+  <path class="fondo" d="M12 90 C26 84 44 80 64 82 L64 98 C44 100 26 96 12 90 Z"/>
+  <path class="fino" d="M12 90 L44 90"/>
+  <circle class="t" cx="46" cy="90" r="2.4"/>
+  <path class="fino" d="M150 80 L150 100 M156 80 L156 100"/>`;
+
 const DIAS = [
   /* ---------- Día 1 ---------- */
   [
@@ -1847,6 +2171,1086 @@ const DIAS = [
         <path class="fino" d="M184 84 C186 92 186 98 184 104"/>`,
       senal: [117, 92],
       rotulo: [96, 152],
+    },
+  ],
+  /* ---------- Día 36 ---------- */
+  [
+    {
+      palabra: 'tecla',
+      genero: 'f.',
+      campo: 'La máquina de escribir',
+      falsas: ['palanca', 'rodillo', 'cinta'],
+      definicion: 'Cada una de las piezas que se pulsan con los dedos para escribir o hacer sonar un instrumento.',
+      curiosidad: 'La disposición QWERTY nació en las máquinas de escribir; el teclado español añadió la ñ.',
+      dibujo: MAQUINA_ESCRIBIR,
+      senal: [98, 130],
+      rotulo: [40, 172],
+    },
+    {
+      palabra: 'volante',
+      genero: 'm.',
+      campo: 'La máquina de coser',
+      falsas: ['pedal', 'canilla', 'lanzadera'],
+      definicion: 'Rueda que regulariza el movimiento de una máquina y que, en la de coser, se puede girar a mano.',
+      curiosidad: 'En las máquinas antiguas, de pedal, una correa lo unía con la rueda de abajo.',
+      dibujo: MAQUINA_COSER,
+      senal: [218, 98],
+      rotulo: [232, 150],
+    },
+    {
+      palabra: 'espiritrompa',
+      genero: 'f.',
+      campo: 'La mariposa',
+      falsas: ['antena', 'palpo', 'mandíbula'],
+      definicion: 'Aparato chupador de las mariposas: una trompa que se enrolla en espiral cuando no la usan.',
+      curiosidad: 'Con ella sorben el néctar del fondo de las flores. Algunas polillas la tienen más larga que el cuerpo.',
+      dibujo: MARIPOSA,
+      senal: [58, 148],
+      rotulo: [20, 172],
+    },
+  ],
+  /* ---------- Día 37 ---------- */
+  [
+    {
+      palabra: 'pedestal',
+      genero: 'm.',
+      campo: 'El lavabo',
+      falsas: ['zócalo', 'sifón', 'encimera'],
+      definicion: 'Columna o pie que sostiene algo, como el lavabo.',
+      curiosidad: 'Se llama igual que la base de las estatuas: «tener a alguien en un pedestal» es admirarlo mucho.',
+      dibujo: LAVABO,
+      senal: [120, 140],
+      rotulo: [40, 150],
+    },
+    {
+      palabra: 'valva',
+      genero: 'f.',
+      campo: 'La almeja',
+      falsas: ['charnela', 'manto', 'sifón'],
+      definicion: 'Cada una de las dos piezas duras y móviles que forman la concha de moluscos como la almeja.',
+      curiosidad: 'Por eso se llaman bivalvos. Las líneas que se ven en ellas son anillos de crecimiento.',
+      dibujo: ALMEJA,
+      senal: [160, 120],
+      rotulo: [214, 166],
+    },
+    {
+      palabra: 'aguijón',
+      genero: 'm.',
+      campo: 'La rosa',
+      falsas: ['estípula', 'zarcillo', 'nudo'],
+      definicion: 'Púa que tienen en la corteza algunas plantas, como el rosal, y que se desprende con ella sin dañar la madera.',
+      curiosidad: 'Aunque las llamamos espinas, las del rosal son aguijones: las espinas de verdad, como las del cactus, son hojas o ramas transformadas.',
+      dibujo: ROSA,
+      senal: [129, 114],
+      rotulo: [196, 100],
+    },
+  ],
+  /* ---------- Día 38 ---------- */
+  [
+    {
+      palabra: 'afluente',
+      genero: 'm.',
+      campo: 'El río, visto desde el aire',
+      falsas: ['meandro', 'delta', 'cauce'],
+      definicion: 'Río secundario que desemboca en otro principal.',
+      curiosidad: 'El Amazonas tiene más de mil afluentes, y varios son más largos que cualquier río de Europa occidental.',
+      dibujo: RIO,
+      senal: [200, 70],
+      rotulo: [226, 30],
+    },
+    {
+      palabra: 'bancada',
+      genero: 'f.',
+      campo: 'La barca de remos, vista desde arriba',
+      falsas: ['regala', 'quilla', 'escálamo'],
+      definicion: 'En las embarcaciones de remo, tabla o banco donde se sientan los remeros.',
+      curiosidad: 'En las galeras, en cada bancada remaban varios galeotes, a veces encadenados.',
+      dibujo: BARCA,
+      senal: [150, 100],
+      rotulo: [210, 160],
+    },
+    {
+      palabra: 'vaguada',
+      genero: 'f.',
+      campo: 'La montaña',
+      falsas: ['collado', 'ladera', 'cresta'],
+      definicion: 'Línea que marca la parte más honda de un valle, por donde van las aguas.',
+      curiosidad: 'Es lo contrario de la divisoria: por las vaguadas corren los arroyos.',
+      dibujo: MONTANA,
+      senal: [100, 150],
+      rotulo: [40, 172],
+    },
+  ],
+  /* ---------- Día 39 ---------- */
+  [
+    {
+      palabra: 'parche',
+      genero: 'm.',
+      campo: 'El tambor',
+      falsas: ['aro', 'bordón', 'caja'],
+      definicion: 'Piel o lámina tensa que se golpea en el tambor.',
+      curiosidad: '«¡Oído al parche!» es una llamada de atención que viene de los toques militares de tambor.',
+      dibujo: TAMBOR,
+      senal: [100, 70],
+      rotulo: [20, 40],
+    },
+    {
+      palabra: 'brocal',
+      genero: 'm.',
+      campo: 'El pozo',
+      falsas: ['garrucha', 'aljibe', 'noria'],
+      definicion: 'Antepecho alrededor de la boca de un pozo.',
+      curiosidad: 'Viene del latín bucca, ‘boca’. También se llama brocal el borde de la bota de vino.',
+      dibujo: POZO,
+      senal: [70, 112],
+      rotulo: [20, 90],
+    },
+    {
+      palabra: 'matacán',
+      genero: 'm.',
+      campo: 'El castillo',
+      falsas: ['almena', 'barbacana', 'adarve'],
+      definicion: 'Obra voladiza en lo alto de un muro, con suelo agujereado, para hostigar desde arriba al enemigo que llega al pie.',
+      curiosidad: 'Por los agujeros se arrojaban piedras, flechas y, según las crónicas, aceite o agua hirviendo.',
+      dibujo: CASTILLO,
+      senal: [140, 72],
+      rotulo: [206, 50],
+    },
+  ],
+  /* ---------- Día 40 ---------- */
+  [
+    {
+      palabra: 'gárgola',
+      genero: 'f.',
+      campo: 'La fachada gótica',
+      falsas: ['pináculo', 'arbotante', 'canecillo'],
+      definicion: 'Parte final, a menudo con forma de animal fantástico, del caño por donde se vierte el agua de los tejados.',
+      curiosidad: 'Del francés gargouille, de la familia de «garganta» y «gárgaras»: el agua sale por la boca.',
+      dibujo: FACHADA,
+      senal: [220, 98],
+      rotulo: [226, 150],
+    },
+    {
+      palabra: 'paladar',
+      genero: 'm.',
+      campo: 'La boca',
+      falsas: ['encía', 'campanilla', 'carrillo'],
+      definicion: 'Parte interior y superior de la boca.',
+      curiosidad: 'Como se creía que allí se percibía el sabor, «tener buen paladar» es saber apreciar la comida y, por extensión, tener buen gusto.',
+      dibujo: BOCA,
+      senal: [104, 85],
+      rotulo: [30, 18],
+    },
+    {
+      palabra: 'piqueta',
+      genero: 'f.',
+      campo: 'La tienda de campaña',
+      falsas: ['mástil', 'viento', 'toldo'],
+      definicion: 'Estaca pequeña que se clava en el suelo para sujetar una tienda de campaña.',
+      curiosidad: 'Ahora suelen ser de metal; las de las antiguas tiendas de lona eran de madera.',
+      dibujo: TIENDA,
+      senal: [21, 157],
+      rotulo: [14, 110],
+    },
+  ],
+  /* ---------- Día 41 ---------- */
+  [
+    {
+      palabra: 'canalón',
+      genero: 'm.',
+      campo: 'La casa',
+      falsas: ['bajante', 'alero', 'cumbrera'],
+      definicion: 'Conducto que recoge el agua de lluvia en el borde de los tejados.',
+      curiosidad: 'El agua que recoge baja luego hasta el suelo por la bajante.',
+      dibujo: CASA,
+      senal: [170, 87],
+      rotulo: [200, 30],
+    },
+    {
+      palabra: 'pitón',
+      genero: 'm.',
+      campo: 'El toro',
+      falsas: ['testuz', 'morrillo', 'papada'],
+      definicion: 'Extremo superior y puntiagudo del cuerno del toro.',
+      curiosidad: 'Se dice que un toro está «afeitado» si le han limado los pitones para que sean menos peligrosos.',
+      dibujo: TORO,
+      senal: [59, 17],
+      rotulo: [20, 40],
+    },
+    {
+      palabra: 'ensenada',
+      genero: 'f.',
+      campo: 'La costa, en el mapa',
+      falsas: ['cabo', 'istmo', 'península'],
+      definicion: 'Entrada del mar en la tierra, como una bahía pequeña.',
+      curiosidad: 'Viene de «seno»: la costa forma un hueco, como un regazo, donde se resguardan los barcos.',
+      dibujo: COSTA,
+      senal: [60, 100],
+      rotulo: [30, 40],
+    },
+  ],
+  /* ---------- Día 42 ---------- */
+  [
+    {
+      palabra: 'almena',
+      genero: 'f.',
+      campo: 'El castillo',
+      falsas: ['matacán', 'aspillera', 'adarve'],
+      definicion: 'Cada uno de los prismas que coronan los muros de las fortalezas, con huecos entre ellos para defenderse.',
+      curiosidad: 'Del árabe al-mánaʿa, ‘la defensa’. Los defensores disparaban por los huecos y se resguardaban detrás de los macizos.',
+      dibujo: CASTILLO,
+      senal: [79, 30],
+      rotulo: [30, 14],
+    },
+    {
+      palabra: 'perilla',
+      genero: 'f.',
+      campo: 'La silla de montar',
+      falsas: ['arzón', 'estribo', 'cincha'],
+      definicion: 'Remate en forma de pera del arzón delantero de la silla de montar.',
+      curiosidad: '«De perilla» es muy a propósito. El jinete se agarraba a ella cuando hacía falta.',
+      dibujo: SILLA_MONTAR,
+      senal: [74, 42],
+      rotulo: [24, 20],
+    },
+    {
+      palabra: 'hebijón',
+      genero: 'm.',
+      campo: 'El cinturón',
+      falsas: ['trabilla', 'herrete', 'ojete'],
+      definicion: 'Clavo o púa de la hebilla, que se mete en el agujero de la correa.',
+      curiosidad: 'Es de la familia de «hebilla». Casi todo el mundo lo llama, sin más, la púa de la hebilla.',
+      dibujo: CINTURON,
+      senal: [136, 95],
+      rotulo: [170, 40],
+    },
+  ],
+  /* ---------- Día 43 ---------- */
+  [
+    {
+      palabra: 'rosetón',
+      genero: 'm.',
+      campo: 'La fachada gótica',
+      falsas: ['gárgola', 'tímpano', 'pináculo'],
+      definicion: 'Ventana circular calada, con adornos, típica de las fachadas de las iglesias góticas.',
+      curiosidad: 'Los de Notre Dame de París o la catedral de León tamizan la luz con vidrieras de colores.',
+      dibujo: FACHADA,
+      senal: [120, 82],
+      rotulo: [36, 170],
+    },
+    {
+      palabra: 'anillo',
+      genero: 'm.',
+      campo: 'La seta',
+      falsas: ['volva', 'sombrerillo', 'lámina'],
+      definicion: 'Resto de membrana que, en algunas setas, rodea el pie como una pequeña falda.',
+      curiosidad: 'Es lo que queda del velo que cubría las láminas cuando la seta era joven, y una de las señas para identificar las amanitas.',
+      dibujo: SETA,
+      senal: [140, 112],
+      rotulo: [200, 124],
+    },
+    {
+      palabra: 'timón',
+      genero: 'm.',
+      campo: 'El arado',
+      falsas: ['esteva', 'reja', 'yugo'],
+      definicion: 'Palo largo que sale del arado y al que se sujeta el tiro de las caballerías o de los bueyes.',
+      curiosidad: 'Es la misma palabra que el timón de los barcos: los dos sirven para dirigir.',
+      dibujo: ARADO,
+      senal: [200, 73],
+      rotulo: [222, 20],
+    },
+  ],
+  /* ---------- Día 44 ---------- */
+  [
+    {
+      palabra: 'pesa',
+      genero: 'f.',
+      campo: 'El reloj de cuco',
+      falsas: ['péndola', 'esfera', 'cadena'],
+      definicion: 'Pieza de peso que, colgada de una cuerda o cadena, da movimiento a algunos relojes.',
+      curiosidad: 'En los relojes de cuco suelen tener forma de piña; al bajar poco a poco, mueven el mecanismo, y hay que subirlas a menudo.',
+      dibujo: RELOJ_CUCO,
+      senal: [96, 162],
+      rotulo: [30, 150],
+    },
+    {
+      palabra: 'pabellón',
+      genero: 'm.',
+      campo: 'La trompeta',
+      falsas: ['boquilla', 'bomba', 'pistón'],
+      definicion: 'Ensanche en forma de campana con que terminan la trompeta y otros instrumentos de viento.',
+      curiosidad: 'Se llama igual que la parte exterior de la oreja, el pabellón auditivo: uno recoge el sonido y el otro lo lanza.',
+      dibujo: TROMPETA,
+      senal: [218, 90],
+      rotulo: [226, 160],
+    },
+    {
+      palabra: 'arzón',
+      genero: 'm.',
+      campo: 'La silla de montar',
+      falsas: ['perilla', 'estribo', 'cincha'],
+      definicion: 'Cada una de las dos piezas arqueadas, delantera y trasera, que forman la armazón de la silla de montar.',
+      curiosidad: 'Viene del latín arcus, ‘arco’, por su forma.',
+      dibujo: SILLA_MONTAR,
+      senal: [186, 50],
+      rotulo: [222, 20],
+    },
+  ],
+  /* ---------- Día 45 ---------- */
+  [
+    {
+      palabra: 'buhardilla',
+      genero: 'f.',
+      campo: 'La casa',
+      falsas: ['alero', 'claraboya', 'caballete'],
+      definicion: 'Ventana que se levanta por encima del tejado de una casa, con su tejadillo, para dar luz al interior.',
+      curiosidad: 'Por extensión, se llama así al desván habitable. También se dice guardilla.',
+      dibujo: CASA,
+      senal: [114, 56],
+      rotulo: [60, 14],
+    },
+    {
+      palabra: 'juanete',
+      genero: 'm.',
+      campo: 'El pie',
+      falsas: ['callo', 'empeine', 'dedo'],
+      definicion: 'Hueso del nacimiento del dedo gordo del pie cuando sobresale demasiado.',
+      curiosidad: 'También se llama juanete el pómulo muy abultado. En los barcos, juanete es una vela alta.',
+      dibujo: PIE,
+      senal: [182, 128],
+      rotulo: [212, 96],
+    },
+    {
+      palabra: 'horquilla',
+      genero: 'f.',
+      campo: 'El teléfono antiguo',
+      falsas: ['auricular', 'disco', 'clavija'],
+      definicion: 'Pieza en forma de horca, como aquella del teléfono en la que descansa el auricular.',
+      curiosidad: 'Al descolgar, la horquilla subía y conectaba la línea; al colgar, la cortaba.',
+      dibujo: TELEFONO,
+      senal: [80, 84],
+      rotulo: [30, 110],
+    },
+  ],
+  /* ---------- Día 46 ---------- */
+  [
+    {
+      palabra: 'cabo',
+      genero: 'm.',
+      campo: 'La costa, en el mapa',
+      falsas: ['istmo', 'ensenada', 'golfo'],
+      definicion: 'Lengua de tierra que penetra en el mar.',
+      curiosidad: 'El de Finisterre se tenía por el fin de la tierra. «Cabo» significa ‘extremo’, como en «al fin y al cabo».',
+      dibujo: COSTA,
+      senal: [234, 111],
+      rotulo: [226, 60],
+    },
+    {
+      palabra: 'trabilla',
+      genero: 'f.',
+      campo: 'El cinturón',
+      falsas: ['hebijón', 'jareta', 'festón'],
+      definicion: 'Tira de tela o de cuero que sujeta el extremo del cinturón.',
+      curiosidad: 'Es diminutivo de «traba». También se llama trabilla la tira que pasa por debajo del pie en algunos pantalones y polainas.',
+      dibujo: CINTURON,
+      senal: [156, 114],
+      rotulo: [190, 160],
+    },
+    {
+      palabra: 'collado',
+      genero: 'm.',
+      campo: 'La montaña',
+      falsas: ['vaguada', 'cañada', 'loma'],
+      definicion: 'Depresión suave por donde se puede pasar fácilmente de un lado a otro de una sierra.',
+      curiosidad: 'Muchos pueblos de sierra se llaman así: Collado Villalba, Collado Mediano…',
+      dibujo: MONTANA,
+      senal: [100, 96],
+      rotulo: [100, 20],
+    },
+  ],
+  /* ---------- Día 47 ---------- */
+  [
+    {
+      palabra: 'sombrerillo',
+      genero: 'm.',
+      campo: 'La seta',
+      falsas: ['volva', 'anillo', 'pie'],
+      definicion: 'Parte superior de las setas, en forma de sombrero.',
+      curiosidad: 'Debajo están las láminas, donde se forman las esporas con las que se reproduce el hongo.',
+      dibujo: SETA,
+      senal: [150, 46],
+      rotulo: [210, 20],
+    },
+    {
+      palabra: 'sifón',
+      genero: 'm.',
+      campo: 'El lavabo',
+      falsas: ['rebosadero', 'bajante', 'arqueta'],
+      definicion: 'Tubo doblado que retiene agua en los desagües e impide que suban los malos olores.',
+      curiosidad: 'Es la misma palabra que el sifón del agua con gas: las dos vienen del griego síphon, ‘tubo’.',
+      dibujo: LAVABO,
+      senal: [150, 116],
+      rotulo: [214, 130],
+    },
+    {
+      palabra: 'testuz',
+      genero: 'm.',
+      campo: 'El toro',
+      falsas: ['morrillo', 'pitón', 'papada'],
+      definicion: 'En algunos animales, como el toro, la frente.',
+      curiosidad: 'Es la parte con que embiste el toro. Viene del latín testa, ‘cabeza’, como «testarudo».',
+      dibujo: TORO,
+      senal: [84, 54],
+      rotulo: [30, 84],
+    },
+  ],
+  /* ---------- Día 48 ---------- */
+  [
+    {
+      palabra: 'sien',
+      genero: 'f.',
+      campo: 'La cabeza',
+      falsas: ['nuca', 'pómulo', 'coronilla'],
+      definicion: 'Cada una de las dos partes laterales de la cabeza, entre la frente, el ojo y la oreja.',
+      curiosidad: 'Ahí el hueso del cráneo es más fino y se nota el pulso: por eso duelen las sienes con la jaqueca.',
+      dibujo: CABEZA,
+      senal: [104, 68],
+      rotulo: [36, 24],
+    },
+    {
+      palabra: 'plumín',
+      genero: 'm.',
+      campo: 'La pluma estilográfica',
+      falsas: ['capuchón', 'cargador', 'palillero'],
+      definicion: 'Pieza de metal de la pluma estilográfica que, mojada en tinta, sirve para escribir.',
+      curiosidad: 'Tiene una ranura por donde baja la tinta y un agujerito al final de ella para que no se parta.',
+      dibujo: PLUMA,
+      senal: [34, 90],
+      rotulo: [30, 150],
+    },
+    {
+      palabra: 'viento',
+      genero: 'm.',
+      campo: 'La tienda de campaña',
+      falsas: ['piqueta', 'mástil', 'toldo'],
+      definicion: 'Cuerda que se ata a algo para mantenerlo en su posición, como las que tensan una tienda de campaña.',
+      curiosidad: 'Se llaman así aunque su trabajo sea justamente aguantar el viento.',
+      dibujo: TIENDA,
+      senal: [71, 101],
+      rotulo: [30, 40],
+    },
+  ],
+  /* ---------- Día 49 ---------- */
+  [
+    {
+      palabra: 'disco',
+      genero: 'm.',
+      campo: 'El teléfono antiguo',
+      falsas: ['auricular', 'horquilla', 'teclado'],
+      definicion: 'En los teléfonos antiguos, pieza giratoria con agujeros numerados para marcar.',
+      curiosidad: 'De ahí que todavía digamos «marcar» un número, aunque ya no se haga girando un disco.',
+      dibujo: TELEFONO,
+      senal: [138, 140],
+      rotulo: [220, 172],
+    },
+    {
+      palabra: 'larguero',
+      genero: 'm.',
+      campo: 'La cama',
+      falsas: ['travesaño', 'cabecero', 'somier'],
+      definicion: 'Cada uno de los palos o barras que se ponen a lo largo de una obra de carpintería, como los que unen el cabecero y el piecero de la cama.',
+      curiosidad: 'En el fútbol, el larguero es el palo horizontal de la portería.',
+      dibujo: CAMA,
+      senal: [122, 129],
+      rotulo: [120, 172],
+    },
+    {
+      palabra: 'élitro',
+      genero: 'm.',
+      campo: 'La mariquita',
+      falsas: ['antena', 'tórax', 'abdomen'],
+      definicion: 'Cada una de las dos alas delanteras, endurecidas, de algunos insectos, como los escarabajos, que cubren y protegen las de detrás.',
+      curiosidad: 'La mariquita los abre para volar con las alas de debajo, finas y plegadas. Los puntos no indican su edad, aunque se diga.',
+      dibujo: MARIQUITA,
+      senal: [150, 100],
+      rotulo: [214, 140],
+    },
+  ],
+  /* ---------- Día 50 ---------- */
+  [
+    {
+      palabra: 'encía',
+      genero: 'f.',
+      campo: 'La boca',
+      falsas: ['paladar', 'carrillo', 'frenillo'],
+      definicion: 'Carne que cubre por dentro y por fuera la mandíbula y rodea el cuello de los dientes.',
+      curiosidad: 'Viene del latín gingiva, la misma raíz que «gingivitis».',
+      dibujo: BOCA,
+      senal: [150, 62],
+      rotulo: [210, 24],
+    },
+    {
+      palabra: 'bocallave',
+      genero: 'f.',
+      campo: 'El candado',
+      falsas: ['pestillo', 'guarda', 'cerradero'],
+      definicion: 'Parte de la cerradura por donde se mete la llave.',
+      curiosidad: 'Es tan transparente como parece: la boca de la llave. Las cerraduras antiguas la adornaban con una chapa recortada llamada escudo.',
+      dibujo: CANDADO,
+      senal: [120, 118],
+      rotulo: [200, 150],
+    },
+    {
+      palabra: 'clavillo',
+      genero: 'm.',
+      campo: 'El abanico',
+      falsas: ['perno', 'remache', 'pasador'],
+      definicion: 'Clavo pequeño que atraviesa las varillas del abanico, o las hojas de las tijeras, y les sirve de eje.',
+      curiosidad: 'Es diminutivo de «clavo». En botánica, el clavillo es también el clavo de olor, la especia.',
+      dibujo: ABANICO,
+      senal: [120, 165],
+      rotulo: [56, 172],
+    },
+  ],
+  /* ---------- Día 51 ---------- */
+  [
+    {
+      palabra: 'boquilla',
+      genero: 'f.',
+      campo: 'La trompeta',
+      falsas: ['pabellón', 'pistón', 'bomba'],
+      definicion: 'Pieza pequeña en forma de embudo por donde se sopla en algunos instrumentos de viento.',
+      curiosidad: 'Los trompetistas la eligen con cuidado: según su forma, el sonido sale más brillante o más oscuro.',
+      dibujo: TROMPETA,
+      senal: [16, 90],
+      rotulo: [16, 140],
+    },
+    {
+      palabra: 'meandro',
+      genero: 'm.',
+      campo: 'El río, visto desde el aire',
+      falsas: ['afluente', 'delta', 'remanso'],
+      definicion: 'Cada una de las curvas que describe el curso de un río.',
+      curiosidad: 'Viene del Meandro, un río de Asia Menor, en la actual Turquía, famoso por lo sinuoso de su cauce.',
+      dibujo: RIO,
+      senal: [66, 58],
+      rotulo: [20, 20],
+    },
+    {
+      palabra: 'vibrisa',
+      genero: 'f.',
+      campo: 'El gato',
+      falsas: ['cerda', 'pestaña', 'barba'],
+      definicion: 'Cada uno de los pelos táctiles, largos y rígidos, del hocico de muchos mamíferos, como los bigotes del gato.',
+      curiosidad: 'Al gato le sirven para orientarse a oscuras y medir huecos: abarcan más o menos lo ancho de su cuerpo.',
+      dibujo: GATO,
+      senal: [160, 104],
+      rotulo: [214, 40],
+    },
+  ],
+  /* ---------- Día 52 ---------- */
+  [
+    {
+      palabra: 'aldaba',
+      genero: 'f.',
+      campo: 'La puerta de la calle',
+      falsas: ['mirilla', 'cerrojo', 'gozne'],
+      definicion: 'Pieza de metal que se pone en las puertas para llamar golpeando con ella.',
+      curiosidad: 'Del árabe aḍ-ḍabba. «Tener buenas aldabas» es tener buenos padrinos o influencias.',
+      dibujo: PUERTA,
+      senal: [120, 84],
+      rotulo: [210, 40],
+    },
+    {
+      palabra: 'istmo',
+      genero: 'm.',
+      campo: 'La costa, en el mapa',
+      falsas: ['estrecho', 'cabo', 'península'],
+      definicion: 'Lengua estrecha de tierra que une dos continentes, o una península con un continente.',
+      curiosidad: 'El de Panamá une las dos Américas y lo atraviesa el canal.',
+      dibujo: COSTA,
+      senal: [146, 88],
+      rotulo: [200, 100],
+    },
+    {
+      palabra: 'país',
+      genero: 'm.',
+      campo: 'El abanico',
+      falsas: ['varillaje', 'clavillo', 'calado'],
+      definicion: 'Papel, tela o piel que, plegados, cubren el varillaje del abanico.',
+      curiosidad: 'Se llama así porque en él solían pintarse paisajes: en pintura, «país» significó también paisaje.',
+      dibujo: ABANICO,
+      senal: [103, 66],
+      rotulo: [30, 24],
+    },
+  ],
+  /* ---------- Día 53 ---------- */
+  [
+    {
+      palabra: 'antena',
+      genero: 'f.',
+      campo: 'La mariposa',
+      falsas: ['espiritrompa', 'palpo', 'élitro'],
+      definicion: 'Cada uno de los apéndices articulados que tienen en la cabeza muchos animales, como los insectos.',
+      curiosidad: 'Las de las mariposas suelen acabar en una bolita; las de las polillas, en punta o en forma de pluma.',
+      dibujo: MARIPOSA,
+      senal: [52, 76],
+      rotulo: [20, 30],
+    },
+    {
+      palabra: 'garrucha',
+      genero: 'f.',
+      campo: 'El pozo',
+      falsas: ['brocal', 'torno', 'noria'],
+      definicion: 'Polea: rueda que gira sobre su eje y por cuya garganta pasa una cuerda.',
+      curiosidad: 'En muchos pueblos se oía su chirrido al sacar el cubo de agua.',
+      dibujo: POZO,
+      senal: [120, 44],
+      rotulo: [200, 10],
+    },
+    {
+      palabra: 'pináculo',
+      genero: 'm.',
+      campo: 'La fachada gótica',
+      falsas: ['gárgola', 'arbotante', 'crestería'],
+      definicion: 'Remate piramidal o cónico que corona contrafuertes y torres, sobre todo en el gótico.',
+      curiosidad: 'No es solo adorno: su peso ayuda a los contrafuertes a resistir el empuje de las bóvedas. «Estar en el pináculo» es estar en lo más alto.',
+      dibujo: FACHADA,
+      senal: [50, 20],
+      rotulo: [16, 10],
+    },
+  ],
+  /* ---------- Día 54 ---------- */
+  [
+    {
+      palabra: 'ladera',
+      genero: 'f.',
+      campo: 'La montaña',
+      falsas: ['cumbre', 'vaguada', 'collado'],
+      definicion: 'Declive de un monte o de una altura.',
+      curiosidad: 'Viene de «lado». Las laderas que miran al sur se llaman solanas; las que miran al norte, umbrías.',
+      dibujo: MONTANA,
+      senal: [200, 110],
+      rotulo: [226, 40],
+    },
+    {
+      palabra: 'piecero',
+      genero: 'm.',
+      campo: 'La cama',
+      falsas: ['cabecero', 'larguero', 'somier'],
+      definicion: 'Pieza que forma el pie de la cama.',
+      curiosidad: 'Es el compañero menos conocido del cabecero; muchas camas modernas no lo tienen.',
+      dibujo: CAMA,
+      senal: [211, 110],
+      rotulo: [230, 60],
+    },
+    {
+      palabra: 'aspillera',
+      genero: 'f.',
+      campo: 'El castillo',
+      falsas: ['almena', 'matacán', 'adarve'],
+      definicion: 'Abertura larga y estrecha en un muro para disparar por ella.',
+      curiosidad: 'Por dentro se ensancha, para que el arquero pudiera moverse y apuntar, mientras que por fuera apenas ofrece blanco.',
+      dibujo: CASTILLO,
+      senal: [120, 118],
+      rotulo: [206, 130],
+    },
+  ],
+  /* ---------- Día 55 ---------- */
+  [
+    {
+      palabra: 'hebilla',
+      genero: 'f.',
+      campo: 'El cinturón',
+      falsas: ['trabilla', 'hebijón', 'ojete'],
+      definicion: 'Pieza de metal u otro material, con uno o más clavos, que sirve para ajustar correas y cintas.',
+      curiosidad: 'Viene del latín fibula, el broche con que los romanos se sujetaban la ropa.',
+      dibujo: CINTURON,
+      senal: [88, 70],
+      rotulo: [40, 30],
+    },
+    {
+      palabra: 'campanilla',
+      genero: 'f.',
+      campo: 'La boca',
+      falsas: ['amígdala', 'epiglotis', 'frenillo'],
+      definicion: 'Úvula: masa carnosa que cuelga del borde del velo del paladar, al fondo de la boca.',
+      curiosidad: 'Se llama así por su forma de badajo de campana. Los médicos la llaman úvula, que en latín es ‘uvita’.',
+      dibujo: BOCA,
+      senal: [120, 102],
+      rotulo: [210, 168],
+    },
+    {
+      palabra: 'esteva',
+      genero: 'f.',
+      campo: 'El arado',
+      falsas: ['timón', 'reja', 'yugo'],
+      definicion: 'Pieza corva y trasera del arado, sobre la que el labrador apoya la mano para guiarlo.',
+      curiosidad: 'Con ella se guiaba el surco: quien llevaba la esteva era quien de verdad araba.',
+      dibujo: ARADO,
+      senal: [34, 46],
+      rotulo: [16, 12],
+    },
+  ],
+  /* ---------- Día 56 ---------- */
+  [
+    {
+      palabra: 'pétalo',
+      genero: 'm.',
+      campo: 'La rosa',
+      falsas: ['sépalo', 'cáliz', 'estambre'],
+      definicion: 'Cada una de las hojas, normalmente de colores vivos, que forman la corola de una flor.',
+      curiosidad: 'Del griego pétalon, ‘hoja’. Se dice «deshojar la margarita», aunque lo que se arranca son pétalos.',
+      dibujo: ROSA,
+      senal: [100, 50],
+      rotulo: [40, 20],
+    },
+    {
+      palabra: 'rodillo',
+      genero: 'm.',
+      campo: 'La máquina de escribir',
+      falsas: ['carro', 'tecla', 'cinta'],
+      definicion: 'En la máquina de escribir, cilindro de caucho sobre el que se coloca el papel.',
+      curiosidad: 'Las letras golpeaban contra él a través de la cinta de tinta, y al final de cada línea sonaba una campanilla.',
+      dibujo: MAQUINA_ESCRIBIR,
+      senal: [188, 56],
+      rotulo: [226, 24],
+    },
+    {
+      palabra: 'regala',
+      genero: 'f.',
+      campo: 'La barca de remos, vista desde arriba',
+      falsas: ['quilla', 'bancada', 'proa'],
+      definicion: 'Tablón que forma el borde superior del costado de una embarcación.',
+      curiosidad: 'Es el borde en el que uno se apoya al asomarse por la borda.',
+      dibujo: BARCA,
+      senal: [40, 74],
+      rotulo: [14, 30],
+    },
+  ],
+  /* ---------- Día 57 ---------- */
+  [
+    {
+      palabra: 'estribo',
+      genero: 'm.',
+      campo: 'La silla de montar',
+      falsas: ['cincha', 'arzón', 'espuela'],
+      definicion: 'Pieza en que el jinete apoya el pie y que cuelga a cada lado de la silla de montar.',
+      curiosidad: '«Perder los estribos» es perder la calma, como el jinete que se queda sin apoyo y a punto de caer.',
+      dibujo: SILLA_MONTAR,
+      senal: [120, 158],
+      rotulo: [200, 172],
+    },
+    {
+      palabra: 'reja',
+      genero: 'f.',
+      campo: 'El arado',
+      falsas: ['esteva', 'timón', 'yugo'],
+      definicion: 'Pieza de hierro del arado que rompe y revuelve la tierra.',
+      curiosidad: 'No tiene que ver con la reja de las ventanas. «Dar una reja» a una tierra es ararla una vez.',
+      dibujo: ARADO,
+      senal: [176, 155],
+      rotulo: [220, 176],
+    },
+    {
+      palabra: 'escálamo',
+      genero: 'm.',
+      campo: 'La barca de remos, vista desde arriba',
+      falsas: ['bancada', 'regala', 'quilla'],
+      definicion: 'Estaca pequeña y redonda, encajada en el borde de la embarcación, a la que se ata o en la que se apoya el remo.',
+      curiosidad: 'También se llama tolete. Viene del griego skalmós.',
+      dibujo: BARCA,
+      senal: [120, 47],
+      rotulo: [40, 16],
+    },
+  ],
+  /* ---------- Día 58 ---------- */
+  [
+    {
+      palabra: 'hocico',
+      genero: 'm.',
+      campo: 'El gato',
+      falsas: ['belfo', 'papada', 'testuz'],
+      definicion: 'Parte más o menos alargada de la cabeza de algunos animales, en la que están la boca y los orificios nasales.',
+      curiosidad: '«Meter el hocico» en algo es curiosear; «caer de hocicos», caer de boca.',
+      dibujo: GATO,
+      senal: [100, 118],
+      rotulo: [40, 170],
+    },
+    {
+      palabra: 'pistón',
+      genero: 'm.',
+      campo: 'La trompeta',
+      falsas: ['llave', 'pabellón', 'boquilla'],
+      definicion: 'Llave en forma de émbolo de algunos instrumentos de viento, como la trompeta.',
+      curiosidad: 'Antes de que se inventaran los pistones, a principios del siglo XIX, la trompeta solo podía dar unas pocas notas.',
+      dibujo: TROMPETA,
+      senal: [117, 58],
+      rotulo: [117, 16],
+    },
+    {
+      palabra: 'rebosadero',
+      genero: 'm.',
+      campo: 'El lavabo',
+      falsas: ['desagüe', 'sifón', 'tapón'],
+      definicion: 'Abertura por donde se vierte el agua que rebosa, como la que tienen los lavabos cerca del borde.',
+      curiosidad: 'Evita que el lavabo se desborde si se deja el grifo abierto con el tapón puesto.',
+      dibujo: LAVABO,
+      senal: [120, 64],
+      rotulo: [200, 20],
+    },
+  ],
+  /* ---------- Día 59 ---------- */
+  [
+    {
+      palabra: 'talón',
+      genero: 'm.',
+      campo: 'El pie',
+      falsas: ['tobillo', 'empeine', 'planta'],
+      definicion: 'Parte posterior del pie humano.',
+      curiosidad: 'El de Aquiles era su único punto débil: su madre lo sumergió en la laguna Estigia sujetándolo por ahí.',
+      dibujo: PIE,
+      senal: [40, 140],
+      rotulo: [14, 170],
+    },
+    {
+      palabra: 'delta',
+      genero: 'm.',
+      campo: 'El río, visto desde el aire',
+      falsas: ['estuario', 'meandro', 'afluente'],
+      definicion: 'Terreno comprendido entre los brazos de un río en su desembocadura.',
+      curiosidad: 'Se llama así por la forma triangular del delta del Nilo, como la letra griega Δ. El del Ebro es el mayor de España.',
+      dibujo: RIO,
+      senal: [120, 160],
+      rotulo: [210, 174],
+    },
+    {
+      palabra: 'volva',
+      genero: 'f.',
+      campo: 'La seta',
+      falsas: ['anillo', 'micelio', 'sombrerillo'],
+      definicion: 'Envoltura membranosa que, en algunas setas, rodea la base del pie a modo de saco.',
+      curiosidad: 'La tienen muchas amanitas, como la mortal Amanita phalloides: por eso conviene sacar la seta entera para identificarla.',
+      dibujo: SETA,
+      senal: [130, 164],
+      rotulo: [200, 160],
+    },
+  ],
+  /* ---------- Día 60 ---------- */
+  [
+    {
+      palabra: 'auricular',
+      genero: 'm.',
+      campo: 'El teléfono antiguo',
+      falsas: ['disco', 'horquilla', 'micrófono'],
+      definicion: 'En el teléfono, la pieza que se aplica al oído.',
+      curiosidad: 'Viene del latín auricula, ‘orejita’. Por extensión se llama así a toda la pieza que se coge con la mano.',
+      dibujo: TELEFONO,
+      senal: [188, 62],
+      rotulo: [226, 24],
+    },
+    {
+      palabra: 'picaporte',
+      genero: 'm.',
+      campo: 'La puerta de la calle',
+      falsas: ['mirilla', 'cerrojo', 'pasador'],
+      definicion: 'Instrumento para cerrar y abrir las puertas, que se acciona con una manivela o un tirador.',
+      curiosidad: 'Viene del catalán picaportes, de picar y porta. En algunos lugares se llama también así a la aldaba, y por eso no está entre las opciones.',
+      dibujo: PUERTA,
+      senal: [146, 102],
+      rotulo: [214, 150],
+    },
+    {
+      palabra: 'prensatelas',
+      genero: 'm.',
+      campo: 'La máquina de coser',
+      falsas: ['canilla', 'lanzadera', 'dedal'],
+      definicion: 'Pieza de la máquina de coser que sujeta y aprieta la tela mientras se cose.',
+      curiosidad: 'Es un nombre transparente: prensa la tela. Los hay especiales para cremalleras, botones u ojales.',
+      dibujo: MAQUINA_COSER,
+      senal: [54, 139],
+      rotulo: [20, 174],
+    },
+  ],
+  /* ---------- Día 61 ---------- */
+  [
+    {
+      palabra: 'baqueta',
+      genero: 'f.',
+      campo: 'El tambor',
+      falsas: ['batuta', 'maza', 'plectro'],
+      definicion: 'Palillo con que se toca el tambor.',
+      curiosidad: 'También era la vara para atacar la carga de las armas de fuego. «Tratar a la baqueta» es tratar con dureza.',
+      dibujo: TAMBOR,
+      senal: [160, 22],
+      rotulo: [210, 40],
+    },
+    {
+      palabra: 'sépalo',
+      genero: 'm.',
+      campo: 'La rosa',
+      falsas: ['pétalo', 'bráctea', 'estambre'],
+      definicion: 'Cada una de las piezas, normalmente verdes, que forman el cáliz de una flor.',
+      curiosidad: 'Protegen el capullo antes de abrirse; en la rosa se doblan hacia atrás cuando se abre la flor.',
+      dibujo: ROSA,
+      senal: [92, 106],
+      rotulo: [40, 120],
+    },
+    {
+      palabra: 'varillaje',
+      genero: 'm.',
+      campo: 'El abanico',
+      falsas: ['país', 'clavillo', 'calado'],
+      definicion: 'Conjunto de varillas de un abanico o de un paraguas.',
+      curiosidad: 'Las varillas podían ser de madera, hueso, nácar o marfil; las dos de los extremos, más gruesas, se llaman guardas.',
+      dibujo: ABANICO,
+      senal: [134, 127],
+      rotulo: [206, 160],
+    },
+  ],
+  /* ---------- Día 62 ---------- */
+  [
+    {
+      palabra: 'platillo',
+      genero: 'm.',
+      campo: 'La balanza',
+      falsas: ['fiel', 'pesa', 'brazo'],
+      definicion: 'Cada una de las dos piezas en forma de plato de la balanza.',
+      curiosidad: 'La balanza de dos platillos es el símbolo de la justicia.',
+      dibujo: BALANZA,
+      senal: [40, 110],
+      rotulo: [20, 160],
+    },
+    {
+      palabra: 'coronilla',
+      genero: 'f.',
+      campo: 'La cabeza',
+      falsas: ['nuca', 'sien', 'occipucio'],
+      definicion: 'Parte más alta y eminente de la cabeza.',
+      curiosidad: 'Se llamaba así la tonsura en forma de corona de los clérigos. De ahí «estar hasta la coronilla» y «andar de coronilla».',
+      dibujo: CABEZA,
+      senal: [150, 34],
+      rotulo: [206, 16],
+    },
+    {
+      palabra: 'péndola',
+      genero: 'f.',
+      campo: 'El reloj de cuco',
+      falsas: ['pesa', 'esfera', 'saeta'],
+      definicion: 'Varilla con una lenteja en su extremo que, con sus oscilaciones, regula el movimiento de los relojes de pared.',
+      curiosidad: 'Es lo mismo que el péndulo. «Péndola» es también la pluma de escribir: en latín, pennula, ‘plumita’.',
+      dibujo: RELOJ_CUCO,
+      senal: [120, 140],
+      rotulo: [190, 120],
+    },
+  ],
+  /* ---------- Día 63 ---------- */
+  [
+    {
+      palabra: 'nuca',
+      genero: 'f.',
+      campo: 'La cabeza',
+      falsas: ['coronilla', 'sien', 'papada'],
+      definicion: 'Parte alta de la cerviz, donde la columna vertebral se une con la cabeza.',
+      curiosidad: 'Viene del árabe, donde significaba ‘médula espinal’. «Cogote» es casi lo mismo, y por eso no está entre las opciones.',
+      dibujo: CABEZA,
+      senal: [166, 128],
+      rotulo: [214, 150],
+    },
+    {
+      palabra: 'fiel',
+      genero: 'm.',
+      campo: 'La balanza',
+      falsas: ['brazo', 'platillo', 'pesa'],
+      definicion: 'Aguja de la balanza, que se pone vertical cuando los dos platillos pesan lo mismo.',
+      curiosidad: 'De ahí «ser el fiel de la balanza»: lo que decide hacia qué lado se inclina algo.',
+      dibujo: BALANZA,
+      senal: [120, 24],
+      rotulo: [60, 10],
+    },
+    {
+      palabra: 'morrillo',
+      genero: 'm.',
+      campo: 'El toro',
+      falsas: ['testuz', 'papada', 'cruz'],
+      definicion: 'Porción carnosa que tienen las reses en la parte superior y anterior del cuello.',
+      curiosidad: 'Es donde el picador clava la vara. Por extensión, se llama morrillo al cogote abultado de una persona.',
+      dibujo: TORO,
+      senal: [132, 50],
+      rotulo: [180, 16],
+    },
+  ],
+  /* ---------- Día 64 ---------- */
+  [
+    {
+      palabra: 'tobillo',
+      genero: 'm.',
+      campo: 'El pie',
+      falsas: ['talón', 'empeine', 'corva'],
+      definicion: 'Protuberancia formada por la tibia y el peroné en la articulación de la pierna con el pie.',
+      curiosidad: 'Los anatomistas lo llaman maléolo, que en latín es ‘martillito’, por su forma.',
+      dibujo: PIE,
+      senal: [74, 80],
+      rotulo: [20, 40],
+    },
+    {
+      palabra: 'almohadilla',
+      genero: 'f.',
+      campo: 'El gato',
+      falsas: ['pezuña', 'espolón', 'garra'],
+      definicion: 'Cada una de las partes blandas y abultadas de la planta de las patas de algunos animales, como el gato o el perro.',
+      curiosidad: 'Amortiguan las pisadas y hacen que el gato camine sin ruido. Además sudan: es uno de los pocos sitios por donde transpira.',
+      dibujo: GATO,
+      senal: [201, 132],
+      rotulo: [232, 172],
+    },
+    {
+      palabra: 'gozne',
+      genero: 'm.',
+      campo: 'La puerta de la calle',
+      falsas: ['jamba', 'dintel', 'cerrojo'],
+      definicion: 'Herraje articulado con que se fijan las puertas y ventanas al marco para que giren.',
+      curiosidad: 'Es lo mismo que una bisagra, y por eso no hay bisagra entre las opciones. «Salirse de los goznes» es perder los estribos.',
+      dibujo: PUERTA,
+      senal: [62, 38],
+      rotulo: [20, 20],
+    },
+  ],
+  /* ---------- Día 65 ---------- */
+  [
+    {
+      palabra: 'cabecero',
+      genero: 'm.',
+      campo: 'La cama',
+      falsas: ['piecero', 'larguero', 'dosel'],
+      definicion: 'Pieza de la cama, como una tabla o una reja, que forma la cabecera.',
+      curiosidad: 'Se apoya contra la pared. En muchas camas antiguas era de hierro forjado o de latón.',
+      dibujo: CAMA,
+      senal: [30, 44],
+      rotulo: [14, 12],
+    },
+    {
+      palabra: 'bajante',
+      genero: 'f.',
+      campo: 'La casa',
+      falsas: ['canalón', 'alero', 'arqueta'],
+      definicion: 'Tubería vertical que lleva el agua de los tejados o de los desagües hasta el suelo o la alcantarilla.',
+      curiosidad: 'Se puede decir «la bajante» o «el bajante».',
+      dibujo: CASA,
+      senal: [209, 140],
+      rotulo: [232, 110],
+    },
+    {
+      palabra: 'charnela',
+      genero: 'f.',
+      campo: 'La almeja',
+      falsas: ['valva', 'manto', 'sifón'],
+      definicion: 'Articulación que une las dos valvas de la concha de los bivalvos.',
+      curiosidad: 'También se llama charnela la bisagra de algunos objetos, como las cajitas o los relojes de bolsillo.',
+      dibujo: ALMEJA,
+      senal: [120, 42],
+      rotulo: [200, 16],
     },
   ],
 ];
