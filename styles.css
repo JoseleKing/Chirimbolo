@@ -24,21 +24,20 @@
   --margen: 16px;
   --radio: 6px;
 
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --papel: #16202c;
-    --papel-hondo: #111923;
-    --tarjeta: #1e2a38;
-    --tinta: #efe6d6;
-    --tinta-suave: #cbbfab;
-    --tinta-tenue: #a0978a;
-    --linea: #3a4858;
-    --rojo: #d9675c;
-    --sobre-rojo: #16202c;
-  }
+:root[data-theme="dark"] {
+  --papel: #16202c;
+  --papel-hondo: #111923;
+  --tarjeta: #1e2a38;
+  --tinta: #efe6d6;
+  --tinta-suave: #cbbfab;
+  --tinta-tenue: #a0978a;
+  --linea: #3a4858;
+  --rojo: #d9675c;
+  --sobre-rojo: #16202c;
+  color-scheme: dark;
 }
 
 *,

@@ -9,8 +9,16 @@
   <link rel="icon" href="icons/chirimbolo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#f3ebdc" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#16202c" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f3ebdc">
+  <script>
+    // Modo claro u oscuro: el que se elija en Almanaque, común a todos los juegos. Sin elegir, claro.
+    try {
+      if (localStorage.getItem('almanaque:tema') === 'dark') {
+        document.documentElement.dataset.theme = 'dark';
+        document.querySelector('meta[name="theme-color"]').content = '#16202c';
+      }
+    } catch (e) {}
+  </script>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Chirimbolo">
@@ -29,7 +37,8 @@
     #portada img { width: 7.5rem; height: 7.5rem; border-radius: 22%; box-shadow: 0 0 0 1px #c8b89c; animation: asomar 0.5s ease-out; }
     #portada p { margin: 0; font: 2.4rem/1 "IM Fell English", Georgia, serif; animation: asomar 0.5s ease-out; }
     #portada.oculta { opacity: 0; visibility: hidden; }
-    @media (prefers-color-scheme: dark) { #portada { background: #16202c; color: #efe6d6; } #portada img { box-shadow: 0 0 0 1px #3a4858; } }
+    [data-theme="dark"] #portada { background: #16202c; color: #efe6d6; }
+    [data-theme="dark"] #portada img { box-shadow: 0 0 0 1px #3a4858; }
     @keyframes asomar { from { opacity: 0; transform: scale(0.9); } }
   </style>
 </head>
