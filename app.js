@@ -382,12 +382,14 @@ function responder(numero, indice, valor) {
 }
 
 /** «Chirimbolo nº 4 · 🟥🟥⬜»: rojo, acierto; blanco, fallo. */
+// Una marca por lámina: ▰ acertada, ▱ fallada. «Chirimbolo nº 7 ▰▱▰ 2/3 aciertos» y el enlace.
 function lineaResultado(numero, aciertos) {
-  return `Chirimbolo nº ${numero} · ${aciertos.map((a) => (a ? '🟥' : '⬜')).join('')}`;
+  const marcas = aciertos.map((a) => (a ? '▰' : '▱')).join('');
+  return `Chirimbolo nº ${numero} ${marcas} ${aciertos.filter(Boolean).length}/${aciertos.length} aciertos`;
 }
 
 function textoCompartir(numero, aciertos) {
-  return `${lineaResultado(numero, aciertos)}\n${location.origin}${location.pathname}`;
+  return `${lineaResultado(numero, aciertos)}\njoseleking.github.io/Chirimbolo`;
 }
 
 async function compartir(numero, aciertos) {
