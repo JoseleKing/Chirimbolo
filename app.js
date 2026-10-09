@@ -444,8 +444,8 @@ function retirarPortada() {
   if (!portada) return;
   setTimeout(() => {
     portada.classList.add('oculta');
-    setTimeout(() => portada.remove(), 400);
-  }, Math.max(0, 1200 - performance.now()));
+    setTimeout(() => portada.remove(), 500);
+  }, Math.max(0, 1500 - performance.now()));
 }
 
 function iniciar() {
@@ -457,7 +457,7 @@ function iniciar() {
 
   render();
   retirarPortada();
-  setTimeout(reglasPrimeraVez, 1300);
+  setTimeout(reglasPrimeraVez, 1850);
 
   // Cada segundo: la cuenta atrás y, a medianoche de Madrid, el reto nuevo.
   setInterval(() => {
