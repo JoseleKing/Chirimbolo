@@ -45,11 +45,11 @@
       background: #f3ebdc; color: #16202c;
       transition: opacity 0.4s, visibility 0.4s;
     }
-    #portada img { width: 7.5rem; height: 7.5rem; border-radius: 22%; box-shadow: 0 0 0 1px #c8b89c; animation: sello 0.55s ease-in; }
+    #portada img { width: 7.5rem; height: 7.5rem; border-radius: 22%; box-shadow: 0 0 0 1px #c8b89c, 0 2px 4px rgba(22, 32, 44, 0.3), 0 16px 44px -6px rgba(22, 32, 44, 0.4); animation: sello 0.55s ease-in; }
     #portada p { margin: 0; font: 2.4rem/1 "IM Fell English", Georgia, serif; animation: asomar 0.5s ease-out; }
     #portada.oculta { opacity: 0; visibility: hidden; }
     [data-theme="dark"] #portada { background: #16202c; color: #efe6d6; }
-    [data-theme="dark"] #portada img { box-shadow: 0 0 0 1px #3a4858; }
+    [data-theme="dark"] #portada img { box-shadow: 0 0 0 1px #3a4858, 0 2px 4px rgba(0, 0, 0, 0.65), 0 16px 44px -6px rgba(0, 0, 0, 0.8); }
     @keyframes asomar { from { opacity: 0; transform: scale(0.9); } }
     /* El logo cae como un sello de tinta: llega grande, golpea por debajo de su tamaño y se asienta. */
     @keyframes sello {
