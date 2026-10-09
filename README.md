@@ -12,7 +12,7 @@ GitHub Pages e instalable como aplicación (PWA).
 
 - Tres láminas al día, de menos a más difícil: **fácil**, **media** y **difícil**.
 - Al responder aparece la ficha de diccionario: definición breve y una curiosidad.
-- El reto cambia a medianoche, hora de Madrid. El día nº 1 es el 7 de octubre de 2026
+- El reto cambia a medianoche, hora local del jugador. El día nº 1 es el 7 de octubre de 2026
   (`INICIO` en `app.js`).
 - La racha cuenta los días seguidos en que se juegan las tres láminas, se acierte o no.
 - Resultado para compartir: `Chirimbolo nº 4 ▰▰▱ 2/3 aciertos` y el enlace (▰ acierto, ▱ fallo).
