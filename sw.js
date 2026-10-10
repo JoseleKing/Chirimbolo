@@ -5,7 +5,7 @@
    - Fuentes de Google: primero la caché, porque no cambian.
    Si cambias la lista de archivos, sube el número de VERSION. */
 
-const VERSION = 'chirimbolo-v11';
+const VERSION = 'chirimbolo-v12';
 const FUENTES = 'chirimbolo-fuentes';
 
 const ARCHIVOS = [
